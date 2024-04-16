@@ -1,0 +1,476 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Work Studio Figment</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="js/jquery-3.7.1.min.js">
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="apple-touch-icon" type="image/png"
+        href="https://cpwebassets.codepen.io/assets/favicon/apple-touch-icon-5ae1a0698dcc2402e9712f7d01ed509a57814f994c660df9f7a952f3060705ee.png">
+
+    <meta name="apple-mobile-web-app-title" content="Studio Figment">
+
+    <link rel="shortcut icon" type="image/x-icon"
+        href="https://cpwebassets.codepen.io/assets/favicon/favicon-aec34940fbc1a6e787974dcd360f2c6b63348d4b1f4e06c77743096d55480f33.ico">
+
+    <link rel="mask-icon" type="image/x-icon"
+        href="https://cpwebassets.codepen.io/assets/favicon/logo-pin-b4b4269c16397ad2f0f7a01bcdf513a1994f4c94b8af2f191c09eb0d601762b1.svg"
+        color="#111">
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.0.0-beta.3/assets/owl.carousel.css">
+
+</head>
+
+<body>
+    <!-- cursor -->
+    <div id="cursor"></div>
+    <div id="cursor-border"></div>
+    <!-- <input type="button" value="Hover Me!" data-cursor="pointer">
+     <input type="button" value=":-D" data-cursor="pointer2"> -->
+    <!-- header -->
+    <nav role='navigation'>
+        <div class="logo">
+            <a href="/" data-cursor="pointer2"><img src="images/logo.webp" alt="Studio Figment"></a>
+        </div>
+        <div class="hp-work-tab">
+            <ul class="nav nav-tabs" role="tablist">
+                <li class="nav-item" data-cursor="pointer2" role="presentation">
+                  <a class="nav-link active" data-bs-toggle="tab" href="#home" aria-selected="true" role="tab">All</a>
+                </li>
+                <li class="nav-item" data-cursor="pointer2" role="presentation">
+                  <a class="nav-link" data-bs-toggle="tab" href="#achitecture" aria-selected="false" tabindex="-1" role="tab">Architecture</a>
+                </li>
+                <li class="nav-item" data-cursor="pointer2" role="presentation">
+                  <a class="nav-link" data-bs-toggle="tab" href="#planning" aria-selected="false" tabindex="-1" role="tab">Planning</a>
+                </li>
+                <li class="nav-item" data-cursor="pointer2" role="presentation">
+                  <a class="nav-link" data-bs-toggle="tab" href="#interior" aria-selected="false" tabindex="-1" role="tab">Interior</a>
+                </li>
+                <li class="nav-item" data-cursor="pointer2" role="presentation">
+                  <a class="nav-link" data-bs-toggle="tab" href="#landscape" aria-selected="false" tabindex="-1" role="tab">Landscape</a>
+                </li>
+              </ul>
+        </div>
+        <div id="menuToggle" class="menu" data-cursor="pointer2">
+            <input class="humburger" type="checkbox" />
+            <span></span>
+            <span></span>
+            <span></span>
+            <ul id="menu">
+                <div class="overlay"></div>
+                <a href="index.html">
+                    <li>Home</li>
+                </a>
+                <a href="aboutus.html">
+                    <li>About</li>
+                </a>
+                <a href="work.html">
+                    <li>Work</li>
+                </a>
+                <a href="contactus.html">
+                    <li>Contact</li>
+                </a>
+                <div class="social-icon">
+                    <a href="#linkedin"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="#Instagram"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+                </div>
+
+            </ul>
+        </div>
+
+    </nav>
+
+    <!-- left panel -->
+    <div class="left-panel">
+        <div class="horizonral-subtitle"><span><strong>Portfolio of Our Studio</strong></span></div>
+    </div>
+
+    <div id="wrapper" style="overflow: hidden;">
+        <div class="content">
+            <section class="heading-work-hp">
+                <div class="container">
+                    <div class="row">
+                        <h2>Our Work</h2>
+                    </div>
+                </div>
+            </section>
+            <style>
+                
+.owl-item .item {
+  transform: translate3d(0, 0, 0);
+  /* DO NOT REMEMBER WHERE TU PUT THIS, SEARCH FOR 3D ACCELERATION */
+  margin: 50px 0;
+  /* OVERWRITE PLUGIN MARGIN */
+}
+
+.screenshot_slider .owl-item .item img {
+  -webkit-transition: 0.3s;
+  -webkit-box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.1);
+  box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.1);
+  -o-transition: 0.3s;
+  transition: 0.3s;
+  -webkit-transform: scale(0.8);
+  -ms-transform: scale(0.8);
+  transform: scale(0.8);
+}
+
+.screenshot_slider .owl-item.center .item img {
+  -webkit-transform: scale(1.15);
+  -ms-transform: scale(1.15);
+  transform: scale(1.15);
+}
+
+.screenshot_slider .owl-nav {
+  text-align: center;
+}
+
+.screenshot_slider .owl-nav button {
+  font-size: 24px !important;
+  margin: 10px;
+  color: #033aff !important;
+}
+            </style>
+            
+
+            <section class="portfolio-slider">
+                <div id="myTabContent" class="tab-content">
+                    <div class="tab-pane fade show active" id="home" role="tabpanel">
+                      <section class="portfolio-slider">
+                        <div class="section-padding">
+                            <div class="screenshot_slider owl-carousel">
+                                <div class="item">
+                                    <a href="#" data-cursor="pointer3">
+                                        <img src="images/h2.jpg" alt="" title="">
+                                        <div class="portfolio-content-work">
+                                        <h3>Botanist House</h3>
+                                        <p>Plasana, Surat</p>
+                                    </div>
+                                    </a>
+                                </div>
+
+                                <div class="item">
+                                    <a href="#" data-cursor="pointer3">
+                                        <img src="images/h2.jpg" alt="" title="">
+                                        <div class="portfolio-content-work">
+                                        <h3>Botanist House</h3>
+                                        <p>Plasana, Surat</p>
+                                    </div>
+                                    </a>
+                                </div>
+
+                                <div class="item">
+                                    <a href="#" data-cursor="pointer3">
+                                        <img src="images/h2.jpg" alt="" title="">
+                                        <div class="portfolio-content-work">
+                                        <h3>Botanist House</h3>
+                                        <p>Plasana, Surat</p>
+                                    </div>
+                                    </a>
+                                </div>
+
+                                <div class="item">
+                                    <a href="#" data-cursor="pointer3">
+                                        <img src="images/h2.jpg" alt="" title="">
+                                        <div class="portfolio-content-work">
+                                        <h3>Botanist House</h3>
+                                        <p>Plasana, Surat</p>
+                                    </div>
+                                    </a>
+                                </div>
+
+                                <div class="item">
+                                    <a href="#" data-cursor="pointer3">
+                                        <img src="images/h2.jpg" alt="" title="">
+                                        <div class="portfolio-content-work">
+                                        <h3>Botanist House</h3>
+                                        <p>Plasana, Surat</p>
+                                    </div>
+                                    </a>
+                                </div>
+
+                                <div class="item">
+                                    <a href="#" data-cursor="pointer3">
+                                        <img src="images/h2.jpg" alt="" title="">
+                                        <div class="portfolio-content-work">
+                                        <h3>Botanist House</h3>
+                                        <p>Plasana, Surat</p>
+                                    </div>
+                                    </a>
+                                </div>
+
+                                <div class="item">
+                                    <a href="#" data-cursor="pointer3">
+                                        <img src="images/h2.jpg" alt="" title="">
+                                        <div class="portfolio-content-work">
+                                        <h3>Botanist House</h3>
+                                        <p>Plasana, Surat</p>
+                                    </div>
+                                    </a>
+                                </div>
+
+                                <div class="item">
+                                    <a href="#" data-cursor="pointer3">
+                                        <img src="images/h2.jpg" alt="" title="">
+                                        <div class="portfolio-content-work">
+                                        <h3>Botanist House</h3>
+                                        <p>Plasana, Surat</p>
+                                    </div>
+                                    </a>
+                                </div>
+                                
+                           </div>
+                       </div>
+                       
+                        </section>
+                    </div>
+                    <div class="tab-pane fade" id="achitecture" role="tabpanel">
+                        <section class="portfolio-slider">
+                            <div class="section-padding">
+                                <div class="screenshot_slider owl-carousel">
+                                    <div class="item">
+                                        <a href="#" data-cursor="pointer3">
+                                            <img src="images/h2.jpg" alt="" title="">
+                                            <div class="portfolio-content-work">
+                                            <h3>Botanist House</h3>
+                                            <p>Plasana, Surat</p>
+                                        </div>
+                                        </a>
+                                    </div>
+    
+                                    <div class="item">
+                                        <a href="#" data-cursor="pointer3">
+                                            <img src="images/h2.jpg" alt="" title="">
+                                            <div class="portfolio-content-work">
+                                            <h3>Botanist House</h3>
+                                            <p>Plasana, Surat</p>
+                                        </div>
+                                        </a>
+                                    </div>
+    
+                                    <div class="item">
+                                        <a href="#" data-cursor="pointer3">
+                                            <img src="images/h2.jpg" alt="" title="">
+                                            <div class="portfolio-content-work">
+                                            <h3>Botanist House</h3>
+                                            <p>Plasana, Surat</p>
+                                        </div>
+                                        </a>
+                                    </div>
+    
+                                    <div class="item">
+                                        <a href="#" data-cursor="pointer3">
+                                            <img src="images/h2.jpg" alt="" title="">
+                                            <div class="portfolio-content-work">
+                                            <h3>Botanist House</h3>
+                                            <p>Plasana, Surat</p>
+                                        </div>
+                                        </a>
+                                    </div>
+    
+                                    <div class="item">
+                                        <a href="#" data-cursor="pointer3">
+                                            <img src="images/h2.jpg" alt="" title="">
+                                            <div class="portfolio-content-work">
+                                            <h3>Botanist House</h3>
+                                            <p>Plasana, Surat</p>
+                                        </div>
+                                        </a>
+                                    </div>
+    
+                                    <div class="item">
+                                        <a href="#" data-cursor="pointer3">
+                                            <img src="images/h2.jpg" alt="" title="">
+                                            <div class="portfolio-content-work">
+                                            <h3>Botanist House</h3>
+                                            <p>Plasana, Surat</p>
+                                        </div>
+                                        </a>
+                                    </div>
+    
+                                    <div class="item">
+                                        <a href="#" data-cursor="pointer3">
+                                            <img src="images/h2.jpg" alt="" title="">
+                                            <div class="portfolio-content-work">
+                                            <h3>Botanist House</h3>
+                                            <p>Plasana, Surat</p>
+                                        </div>
+                                        </a>
+                                    </div>
+    
+                                    <div class="item">
+                                        <a href="#" data-cursor="pointer3">
+                                            <img src="images/h2.jpg" alt="" title="">
+                                            <div class="portfolio-content-work">
+                                            <h3>Botanist House</h3>
+                                            <p>Plasana, Surat</p>
+                                        </div>
+                                        </a>
+                                    </div>
+                                    
+                               </div>
+                           </div>
+                           
+                            </section>
+                    </div>
+
+                    <div class="tab-pane fade" id="planning" role="tabpanel">
+                        <section class="portfolio-slider">
+                            <div class="section-padding">
+                                <div class="screenshot_slider owl-carousel">
+                                    <div class="item">
+                                        <a href="#" data-cursor="pointer3">
+                                            <img src="images/h2.jpg" alt="" title="">
+                                            <div class="portfolio-content-work">
+                                            <h3>Botanist House</h3>
+                                            <p>Plasana, Surat</p>
+                                        </div>
+                                        </a>
+                                    </div>
+    
+                                    <div class="item">
+                                        <a href="#" data-cursor="pointer3">
+                                            <img src="images/h2.jpg" alt="" title="">
+                                            <div class="portfolio-content-work">
+                                            <h3>Botanist House</h3>
+                                            <p>Plasana, Surat</p>
+                                        </div>
+                                        </a>
+                                    </div>
+    
+                                    <div class="item">
+                                        <a href="#" data-cursor="pointer3">
+                                            <img src="images/h2.jpg" alt="" title="">
+                                            <div class="portfolio-content-work">
+                                            <h3>Botanist House</h3>
+                                            <p>Plasana, Surat</p>
+                                        </div>
+                                        </a>
+                                    </div>
+    
+                                    <div class="item">
+                                        <a href="#" data-cursor="pointer3">
+                                            <img src="images/h2.jpg" alt="" title="">
+                                            <div class="portfolio-content-work">
+                                            <h3>Botanist House</h3>
+                                            <p>Plasana, Surat</p>
+                                        </div>
+                                        </a>
+                                    </div>
+    
+                                    <div class="item">
+                                        <a href="#" data-cursor="pointer3">
+                                            <img src="images/h2.jpg" alt="" title="">
+                                            <div class="portfolio-content-work">
+                                            <h3>Botanist House</h3>
+                                            <p>Plasana, Surat</p>
+                                        </div>
+                                        </a>
+                                    </div>
+    
+                                    <div class="item">
+                                        <a href="#" data-cursor="pointer3">
+                                            <img src="images/h2.jpg" alt="" title="">
+                                            <div class="portfolio-content-work">
+                                            <h3>Botanist House</h3>
+                                            <p>Plasana, Surat</p>
+                                        </div>
+                                        </a>
+                                    </div>
+    
+                                    <div class="item">
+                                        <a href="#" data-cursor="pointer3">
+                                            <img src="images/h2.jpg" alt="" title="">
+                                            <div class="portfolio-content-work">
+                                            <h3>Botanist House</h3>
+                                            <p>Plasana, Surat</p>
+                                        </div>
+                                        </a>
+                                    </div>
+    
+                                    <div class="item">
+                                        <a href="#" data-cursor="pointer3">
+                                            <img src="images/h2.jpg" alt="" title="">
+                                            <div class="portfolio-content-work">
+                                            <h3>Botanist House</h3>
+                                            <p>Plasana, Surat</p>
+                                        </div>
+                                        </a>
+                                    </div>
+                                    
+                               </div>
+                           </div>
+                           
+                            </section>
+                    </div>
+                    
+                  </div>
+            </section>
+        </div>
+    </div>
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.1/js/swiper.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/script.js"></script>
+    <script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.0.0-beta.3/owl.carousel.js"></script>
+   
+
+    <script>
+       var owl = $('.screenshot_slider').owlCarousel({
+    loop: true,
+    stagePadding: 180,
+    responsiveClass: true,
+    nav: true,
+    margin: 30,    
+    autoplayTimeout: 4000,
+    smartSpeed: 400,
+    center: true,
+    navText: ['&#8592;', '&#8594;'],
+    responsive: {
+        0: {
+            items: 1,
+        },
+        600: {
+            items: 5
+        },
+        1200: {
+            items: 3
+        }
+    }
+});
+
+/****************************/
+
+jQuery(document.documentElement).keydown(function (event) {    
+
+    // var owl = jQuery("#carousel");
+
+    // handle cursor keys
+    if (event.keyCode == 37) {
+       // go left
+      owl.trigger('prev.owl.carousel', [400]);
+      //owl.trigger('owl.prev');
+    } else if (event.keyCode == 39) {
+       // go right
+        owl.trigger('next.owl.carousel', [400]);
+       //owl.trigger('owl.next');
+    }
+
+});
+    </script>
+</body>
+
+</html>
+
+
+
+<body>

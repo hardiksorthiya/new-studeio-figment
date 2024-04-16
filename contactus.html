@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Studio Figment</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="js/jquery-3.7.1.min.js">
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/swiper@11.1.0/swiper-bundle.min.css" rel="stylesheet" />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11.1.0/swiper-bundle.min.js"></script>
+    <link rel="apple-touch-icon" type="image/png"
+        href="https://cpwebassets.codepen.io/assets/favicon/apple-touch-icon-5ae1a0698dcc2402e9712f7d01ed509a57814f994c660df9f7a952f3060705ee.png">
+
+    <meta name="apple-mobile-web-app-title" content="Studio Figment">
+
+    <link rel="shortcut icon" type="image/x-icon"
+        href="https://cpwebassets.codepen.io/assets/favicon/favicon-aec34940fbc1a6e787974dcd360f2c6b63348d4b1f4e06c77743096d55480f33.ico">
+
+    <link rel="mask-icon" type="image/x-icon"
+        href="https://cpwebassets.codepen.io/assets/favicon/logo-pin-b4b4269c16397ad2f0f7a01bcdf513a1994f4c94b8af2f191c09eb0d601762b1.svg"
+        color="#111">
+
+
+</head>
+
+<body>
+    <!-- cursor -->
+    <div id="cursor"></div>
+<div id="cursor-border"></div>
+<!-- <input type="button" value="Hover Me!" data-cursor="pointer">
+<input type="button" value=":-D" data-cursor="pointer2"> -->
+    <!-- header -->
+    <nav role='navigation'>
+        <div class="logo">
+            <a href="/" data-cursor="pointer2"><img src="images/logo.webp" alt="Studio Figment"></a>
+        </div>
+        <div id="menuToggle" class="menu" data-cursor="pointer2">
+                <input class="humburger" type="checkbox" />
+                <span></span>
+                <span></span>
+                <span></span>
+                <ul id="menu">
+                    <div class="overlay"></div>
+                    <a href="index.html">
+                        <li>Home</li>
+                    </a>
+                    <a href="aboutus.html">
+                        <li>About</li>
+                    </a>
+                    <a href="work.html">
+                        <li>Work</li>
+                    </a>
+                    <a href="contactus.html">
+                        <li>Contact</li>
+                    </a>
+                    <div class="social-icon">
+                        <a href="#linkedin"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="#Instagram"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="#Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+                    </div>
+                   
+                </ul>
+        </div>
+    </nav>
+
+    <!-- left panel -->
+    <div class="left-panel">
+        <div class="horizonral-subtitle"><span><strong>Contact Our Studio</strong></span></div>
+    </div>
+
+    <!-- wrapper -->
+
+    <div id="wrapper">
+        <div class="content">
+           <section class="contact-section-one">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-lg-5" style="position: relative;">
+                        <div class="overlay-contact-right"></div>
+                        <div class="right-side-contact-hp">
+                            <h1 class="start-proeject-text-contact">
+                                Start<br> project...
+                            </h1>
+                            <p>Please complete the form to collaborate with us.</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-7 ">
+                        <div class="form-for-project-statre left-part-first-contact">
+                            <form action="" method="post">
+                                <div class="form-fil-hp">
+                                    <label for="name">Name</label><br>
+                                    <input type="text" id="name" name="name" required>
+                                </div>
+                                <div class="form-fil-hp second-filed ">
+                                    <div class="form-fil-hp">
+                                        <label for="email">Email:</label><br>
+                                        <input type="email" id="email" name="email" required>
+                                    </div>
+                                    <div class="form-fil-hp">
+                                        <label for="phone">Phone:</label><br>
+                                    <input type="tel" id="phone" name="phone">
+                                    </div>
+                                </div>
+                                <div class="form-fil-hp third-filed">
+                                    <label for="visualization">What Kind Of Visualization?</label>
+                                    <div class="chekbox-option-hp">
+                                        <div class="check-op-hp">
+                                            <input type="checkbox" id="exterior " name="visualization[]" value="exterior">
+                                            <label for="exterior">EXTERIOR</label><br>
+                                        </div>
+                                        <div class="check-op-hp">
+                                            <input type="checkbox" id="exterior " name="visualization[]" value="exterior">
+                                            <label for="exterior">INTERIOR</label><br>
+                                        </div>
+                                        <div class="check-op-hp">
+                                            <input type="checkbox" id="exterior " name="visualization[]" value="exterior">
+                                            <label for="exterior">360 Panorama</label><br>
+                                        </div>
+                                        <div class="check-op-hp">
+                                            <input type="checkbox" id="exterior " name="visualization[]" value="exterior">
+                                            <label for="exterior">Animation</label><br>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="form-fil-hp fourth-filed">
+                                    <label for="selection">How Many Images Do You Need</label><br>
+                                    <select id="selection" name="selection">
+                                    <option value="" disabled="" selected="">Select images</option>
+                                    <option value="single">1-2 Images</option>
+                                    <option value="multiple">3-4 Images</option>
+                                    <option value="multiple">More than 5 Images</option>
+                                </select>
+                                </div>
+                                <div class="form-fil-hp fourth-filed">
+                                    <label for="selection">What Is The Deadline?</label><br>
+                                    <select id="selection" name="selection">
+                                        <option value="" disabled="" selected="">Select Time Deadline</option>
+                                    <option value="des">Less than 2 Weeks</option>
+                                    <option value="single">Less than 5 Weeks</option>
+                                    <option value="multiple">More than 5 Weeks</option>
+                                    <option value="multiple">Really Urgent !!!</option>
+                                </select>
+                                </div>
+                                <div class="form-fil-hp fifth-field">
+                                    <label for="message">Message:</label><br>
+                                    <textarea id="message" name="message" required></textarea><br>
+                                    <input type="submit" value="Submit">
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+           </section>
+
+
+           <section class="contact-section-two">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-lg-6">
+                        <div class="contact-bottom-right">
+                            <h1>Get in touch <br>with us</h1>
+                            <p class="text-con-hp-vt">We'd love to hear from you! If you have any questions or would like to discuss a potential project, please feel free to reach out to us.</p>
+                            <div class="contact-detail-co-bt">
+                                <p class="c-d-b">Email: <a href="mailto:sales@figmentvisual.com" class="m-b-d" data-cursor="pointer2">sales@figmentvisual.com</a></p>
+                                <p class="c-d-b">Phone: <a href="tel:+91 909 994 5875" class="m-b-d" data-cursor="pointer2">+91 909 994 5875</a></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6" style="    display: flex;
+                    justify-content: center;">
+                        <div class="left-part-bottom-contact">
+                            <div class="table-second">
+                                <form action="" method="post">
+                                    <div class="form-fil-hp second-filed ">
+                                        <div class="form-fil-hp">
+                                            <label for="firstname">First Name</label><br>
+                                            <input type="text" id="fname" name="firstname">
+                                        </div>
+                                        <div class="form-fil-hp">
+                                            <label for="lastname">Last Name</label><br>
+                                            <input type="text" id="lname" name="Lastname">
+                                        </div>
+                                    </div>
+                                    <div class="form-fil-hp second-filed ">
+                                        <div class="form-fil-hp">
+                                            <label for="email">Email</label><br>
+                                            <input type="email" id="email" name="email" required>
+                                        </div>
+                                        <div class="form-fil-hp">
+                                            <label for="phone">Phone:</label><br>
+                                        <input type="tel" id="phone" name="phone">
+                                        </div>
+                                    </div>
+                                    <div class="form-fil-hp fifth-field">
+                                        <label for="message">Message:</label><br>
+                                        <textarea id="message" name="message" required></textarea><br>
+                                    </div>
+                                    <div class="submit-button-hp">
+                                        <input type="submit" value="Send Message" class="submit-2">
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+           </section>
+        </div>
+        <footer>
+            <div class="container-fluid">
+                <div class="row" style="align-items: center;">
+                    <div class="col-lg-4">
+                        <div class="first-footer-section">
+                            <p>
+                                Our team takes over everything, from an idea and concept development to realization. We believe in traditions and incorporate them within our innovations.Client is the soul of the project.</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <h2 class="text-center got-project-hp">Got a project in mind?</h2>
+                        <h1 class="text-center got-project-hp" data-cursor="pointer2"><u><strong>Say Hi</strong></u></h1>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="footer-social-icon text-center" data-cursor="pointer2">
+                            <a href="#linkedin"><i class="fa-brands fa-linkedin"></i></a>
+                            <a href="#Instagram"><i class="fa-brands fa-instagram"></i></a>
+                            <a href="#Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+
+    <!-- script -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.1/js/swiper.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="js/script.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+</body>
+
+</html>
