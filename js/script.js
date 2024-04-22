@@ -109,9 +109,16 @@
       cursorBorder.classList.add('drag-pointer');
       cursorBorder.style.setProperty("--size", "60px");
         }
+        if (item.dataset.cursor === "pointer4") {
+          cursor.style.backgroundColor = "white";
+          cursorBorder.style.border = "1px solid white";
+      cursorBorder.style.setProperty("--size", "60px");
+        }
       });
       item.addEventListener("mouseout", (e) => {
         cursorBorder.style.backgroundColor = "unset";
+        cursor.style.backgroundColor = "unset";
+        cursorBorder.style.border = "unset";
         cursorBorder.style.mixBlendMode = "unset";
         cursorBorder.style.setProperty("--size", "50px");
         cursorBorder.classList.remove('drag-pointer');

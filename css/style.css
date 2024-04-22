@@ -62,7 +62,11 @@ a {
   user-select: none;
 }
 .logo a img {
-  width: 20%;
+  width: 18%;
+}
+.swiper-button-next:after, .swiper-button-prev:after {
+ 
+  color: black;
 }
 nav {
   position: fixed;
@@ -72,7 +76,7 @@ nav {
   height: 90px;
   z-index: 4;
   background: var(--background-color);
-  padding: 20px 0 0 90px;
+  padding: 20px 0 0 10px;
 }
 #menuToggle input {
   display: block;
@@ -127,7 +131,7 @@ nav {
 }
 #menu {
   position: fixed !important;
-  width: 500px;
+  width: 30%;
   margin: -100px 0 0 0;
   padding: 190px 50px 50px;
   right: -100px;
@@ -173,7 +177,7 @@ nav {
   background: #000000a1;
   position: fixed;
   top: 0;
-  left: 90px;
+  left: 0px;
 }
 #menu a li:hover {
   background: #ffffff1c !important;
@@ -184,7 +188,10 @@ nav {
 
 /* cursor */
 
-
+.social-icon a:hover {
+  font-size: 24px !important;
+  transition: 0.5s ease;
+}
 #cursor {
   position: fixed;
   top: -5px;
@@ -223,7 +230,7 @@ nav {
   left: 0;
   width: 90px;
   bottom: 0;
-  z-index: 19;
+  z-index: 3;
   background: var(--background-color);
   -webkit-transform: translate3d(0, 0, 0);
   border-right: 1px solid rgba(255, 255, 255, 0.03);
@@ -270,7 +277,7 @@ nav {
   left: 90px;
   right: 0;
   bottom: 0;
-  z-index: 3;
+  z-index: 1;
   /* background: var(--black-color-hp); */
 }
 
@@ -617,7 +624,7 @@ nav {
   position: relative;
   top: 442px;
   left: 0;
-  min-width: 800px;
+  max-width: 800px;
 }
 .text-about-main:before {
   content: "";
@@ -646,9 +653,9 @@ p.hp-des-two {
 .team-info {
   background: white;
   max-width: 450px;
-  position: relative;
-  left: 45%;
-  bottom: 30px;
+  position: absolute;
+  left: 74%;
+  bottom: -70%;
   padding: 24px;
 }
 .team-info h3 {
@@ -744,6 +751,37 @@ footer {
 
 section#section-fourth-about-testimonials {
   margin-top: 150px;
+}
+.ab-test-hp .owl-item {
+  background: white;
+  padding: 20px;
+}
+.ab-test-hp {
+  margin-bottom: 100px;
+}
+.ab-test-hp .owl-item {
+  scale: 0.8;
+}
+.ab-test-hp .owl-item.active.center {
+  scale: 1;
+}
+.ab-test-hp .text-hp {
+  font-size: 24px;
+  text-align: center;
+  margin-bottom: 30px;
+}
+.ab-test-hp .owl-prev {
+  left: 22%;
+}
+.ab-test-hp .owl-next {
+  right: 22%;
+}
+.sub-testi-hp {
+  text-align: end;
+}
+
+.sub-testi-hp h3 {
+    font-weight: 400;
 }
 /* Caousel Nav */
 .carousel__nav {
@@ -874,30 +912,32 @@ textarea#message {
 /* Owl Carousel */
 
 .owl-prev {
-  background: url(/images/right-svg.png) left center no-repeat;
+  background: url("/images/download-svg.svg") left center no-repeat;
   height: 54px;
   position: absolute;
   top: 40%;
   width: 27px;
   z-index: 1000;
-  left: 10%;
+  left: 9%;
   cursor: pointer;
   color: transparent;
   margin-top: -27px;
 }
 .owl-next {
-  background: url('/images/left-svg.png') right center no-repeat;
+  background: url('/images/download2-svg.svg') right center no-repeat;
   height: 54px;
   position: absolute;
   top: 40%;
   width: 27px;
   z-index: 1000;
-  right: 12%;
+  right: 9%;
   cursor: pointer;
   color: transparent;
   margin-top: -27px;
 }
-
+section.portfolio-slider {
+  margin-top: 100px;
+}
 .owl-prev:hover,
 .owl-next:hover {
   opacity: 0.5;
@@ -1138,7 +1178,7 @@ section.heading-work-hp h2 {
 .hp-work-tab {
   position: absolute;
   top: 25%;
-  left: 30%;
+  left: 36%;
 }
 .hp-work-tab a.nav-link.active {
   background: transparent;

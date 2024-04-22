@@ -88,18 +88,18 @@
 
     <!-- left panel -->
     <div class="left-panel">
-        <div class="horizonral-subtitle"><span><strong>Portfolio of Our Studio</strong></span></div>
+        <div class="horizonral-subtitle"><span><strong>Our Work</strong></span></div>
     </div>
 
-    <div id="wrapper" style="overflow: hidden;">
+    <div id="wrapper" style="overflow: hidden;background: white;">
         <div class="content">
-            <section class="heading-work-hp">
+            <!-- <section class="heading-work-hp">
                 <div class="container">
                     <div class="row">
                         <h2>Our Work</h2>
                     </div>
                 </div>
-            </section>
+            </section> -->
             <style>
                 
 .owl-item .item {
@@ -437,10 +437,14 @@
     navText: ['&#8592;', '&#8594;'],
     responsive: {
         0: {
-            items: 1,
+            items: 2,
+            stagePadding: 0,
         },
         600: {
-            items: 5
+            items: 1
+        },
+        769: {
+            items: 2
         },
         1200: {
             items: 3

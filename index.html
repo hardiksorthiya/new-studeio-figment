@@ -30,40 +30,40 @@
 <body>
     <!-- cursor -->
     <div id="cursor"></div>
-<div id="cursor-border"></div>
-<!-- <input type="button" value="Hover Me!" data-cursor="pointer">
+    <div id="cursor-border"></div>
+    <!-- <input type="button" value="Hover Me!" data-cursor="pointer">
 <input type="button" value=":-D" data-cursor="pointer2"> -->
     <!-- header -->
     <nav role='navigation'>
         <div class="logo">
             <a href="/" data-cursor="pointer2"><img src="images/logo.webp" alt="Studio Figment"></a>
         </div>
-        <div id="menuToggle" class="menu" data-cursor="pointer2">
-                <input class="humburger" type="checkbox" />
-                <span></span>
-                <span></span>
-                <span></span>
-                <ul id="menu">
-                    <div class="overlay"></div>
-                    <a href="index.html">
-                        <li>Home</li>
-                    </a>
-                    <a href="aboutus.html">
-                        <li>About</li>
-                    </a>
-                    <a href="work.html">
-                        <li>Work</li>
-                    </a>
-                    <a href="contactus.html">
-                        <li>Contact</li>
-                    </a>
-                    <div class="social-icon">
-                        <a href="#linkedin"><i class="fa-brands fa-linkedin"></i></a>
-                        <a href="#Instagram"><i class="fa-brands fa-instagram"></i></a>
-                        <a href="#Facebook"><i class="fa-brands fa-facebook-f"></i></a>
-                    </div>
-                   
-                </ul>
+        <div id="menuToggle" class="menu">
+            <input class="humburger" type="checkbox" data-cursor="pointer2" />
+            <span></span>
+            <span></span>
+            <span></span>
+            <ul id="menu">
+                <div class="overlay"></div>
+                <a href="index.html" data-cursor="pointer4">
+                    <li>Home</li>
+                </a>
+                <a href="aboutus.html" data-cursor="pointer4">
+                    <li>About</li>
+                </a>
+                <a href="work.html" data-cursor="pointer4">
+                    <li>Work</li>
+                </a>
+                <a href="contactus.html" data-cursor="pointer4">
+                    <li>Contact</li>
+                </a>
+                <div class="social-icon">
+                    <a href="#linkedin" data-cursor="pointer2"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="#Instagram" data-cursor="pointer2"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#Facebook" data-cursor="pointer2"><i class="fa-brands fa-facebook-f"></i></a>
+                </div>
+
+            </ul>
         </div>
     </nav>
 
@@ -177,7 +177,7 @@
                         </div>
                     </div>
                     <!-- end swiper-wrapper -->
-
+                    
                     <!-- swipper controls -->
                     <div class="swiper-pagination swiper-pagination-clickable swiper-pagination-bullets"><span
                             class="swiper-pagination-bullet swiper-pagination-bullet-active" tabindex="0" role="button"
@@ -189,12 +189,17 @@
                 </div>
             </section>
             <!-- end of hero slider -->
-
-
+           
             <!-- end of hero slider -->
         </div>
     </div>
-
+    <script type="text/javascript">
+        $('.slide-bg-image').mousemove(function (e) {
+            var moveinX = (e.pageX * -1 / 100);
+            var moveinY = (e.pageY * -1 / 100);
+            $(this).css('background-position', moveinX + 'px ' + moveinY + 'px ')
+        })
+    </script>
 
     <!-- script -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.1/js/swiper.min.js"></script>
