@@ -106,27 +106,36 @@
                                     </div>
                                 </div>
                                 <div class="form-fil-hp third-filed">
-                                    <label for="visualization">What Kind Of Visualization?</label>
+                                    <label for="visualization">What kind of project?
+                                    </label>
                                     <div class="chekbox-option-hp">
                                         <div class="check-op-hp">
                                             <input type="checkbox" id="exterior " name="visualization[]" value="exterior">
-                                            <label for="exterior">EXTERIOR</label><br>
+                                            <label for="exterior">Architecture
+                                            </label><br>
                                         </div>
                                         <div class="check-op-hp">
                                             <input type="checkbox" id="exterior " name="visualization[]" value="exterior">
-                                            <label for="exterior">INTERIOR</label><br>
+                                            <label for="exterior">Planning</label><br>
                                         </div>
                                         <div class="check-op-hp">
                                             <input type="checkbox" id="exterior " name="visualization[]" value="exterior">
-                                            <label for="exterior">360 Panorama</label><br>
+                                            <label for="exterior">Interior
+                                            </label><br>
                                         </div>
                                         <div class="check-op-hp">
                                             <input type="checkbox" id="exterior " name="visualization[]" value="exterior">
-                                            <label for="exterior">Animation</label><br>
+                                            <label for="exterior">Landscape
+                                            </label><br>
+                                        </div>
+                                        <div class="check-op-hp">
+                                            <input type="checkbox" id="exterior " name="visualization[]" value="exterior">
+                                            <label for="exterior">Other
+                                            </label><br>
                                         </div>
                                     </div>
                                 </div>
-                                <div class="form-fil-hp fourth-filed">
+                                <!-- <div class="form-fil-hp fourth-filed">
                                     <label for="selection">How Many Images Do You Need</label><br>
                                     <select id="selection" name="selection">
                                     <option value="" disabled="" selected="">Select images</option>
@@ -134,21 +143,35 @@
                                     <option value="multiple">3-4 Images</option>
                                     <option value="multiple">More than 5 Images</option>
                                 </select>
-                                </div>
+                                </div> -->
                                 <div class="form-fil-hp fourth-filed">
-                                    <label for="selection">What Is The Deadline?</label><br>
+                                    <div class="form-fil-hp">
+                                        <label for="plotsize">How big is the plot/site?
+                                        </label><br>
+                                        <input type="text" id="plot" name="plot" required>
+                                    </div>
+                                    <!-- <label for="selection">What Is The Deadline?</label><br>
                                     <select id="selection" name="selection">
                                         <option value="" disabled="" selected="">Select Time Deadline</option>
                                     <option value="des">Less than 2 Weeks</option>
                                     <option value="single">Less than 5 Weeks</option>
                                     <option value="multiple">More than 5 Weeks</option>
                                     <option value="multiple">Really Urgent !!!</option>
-                                </select>
+                                </select> -->
+                                </div>
+                                <div class="form-fil-hp fourth-filed">
+                                    <div class="form-fil-hp">
+                                        <label for="ptimeline">What is the project timeline?
+                                        </label><br>
+                                        <input type="text" id="ptimeline" name="ptimeline" required>
+                                    </div>
                                 </div>
                                 <div class="form-fil-hp fifth-field">
-                                    <label for="message">Message:</label><br>
+                                    <label for="message">Project Brief:</label><br>
                                     <textarea id="message" name="message" required></textarea><br>
-                                    <input type="submit" value="Submit">
+                                </div>
+                                <div class="submit-button-hp">
+                                    <input type="submit" value="Submit" class="submit-2" data-cursor="pointer2">
                                 </div>
                             </form>
                         </div>
@@ -201,7 +224,7 @@
                                         <textarea id="message" name="message" required></textarea><br>
                                     </div>
                                     <div class="submit-button-hp">
-                                        <input type="submit" value="Send Message" class="submit-2">
+                                        <input type="submit" value="Send Message" class="submit-2" data-cursor="pointer2">
                                     </div>
                                 </form>
                             </div>

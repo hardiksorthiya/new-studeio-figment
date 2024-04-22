@@ -21,7 +21,13 @@ body {
   overflow-x: hidden;
   /* needed because hiding the menu on the right side is not perfect,  */
 }
-
+img{
+  transition: 1s ease;
+}
+img:hover{
+  scale: 1.1;
+  transition: 1s ease;
+}
 a {
   text-decoration: none;
   transition: color 0.3s ease;
@@ -131,7 +137,7 @@ nav {
 }
 #menu {
   position: fixed !important;
-  width: 30%;
+  width: 40%;
   margin: -100px 0 0 0;
   padding: 190px 50px 50px;
   right: -100px;
@@ -624,7 +630,8 @@ nav {
   position: relative;
   top: 442px;
   left: 0;
-  max-width: 800px;
+  width: 750px;
+  z-index: 1;
 }
 .text-about-main:before {
   content: "";
@@ -634,7 +641,7 @@ nav {
   background: black;
 }
 section.section-second-about-owner {
-  margin: 170px 0;
+  margin: 290px 0 50px;
 }
 h2.hp-title-two {
   font-weight: 600;
@@ -654,8 +661,8 @@ p.hp-des-two {
   background: white;
   max-width: 450px;
   position: absolute;
-  left: 74%;
-  bottom: -70%;
+  left: 79%;
+  bottom: -90%;
   padding: 24px;
 }
 .team-info h3 {
@@ -833,7 +840,7 @@ section.contact-section-one {
 }
 .right-side-contact-hp {
   background: black;
-  padding: 50px;
+  padding: 10% 20%;
   position: relative;
 }
 h1.start-proeject-text-contact {
@@ -861,7 +868,7 @@ h1.start-proeject-text-contact:after {
 }
 .left-part-first-contact {
   background: #ffffffb0;
-  padding: 20px 50px;
+  padding: 6% 20%;
 }
 .form-fil-hp input, .form-fil-hp select, .form-fil-hp textarea {
   width: 100%;
@@ -1106,7 +1113,7 @@ tr.f-col-hp {
 section.contact-section-two {
   background: #fbfbf9;
   margin-top: 30px;
-  padding: 50px;
+  padding: 5% 8%;
 }
 .contact-bottom-right h1 {
   font-size: 64px;
@@ -1194,4 +1201,18 @@ section.heading-work-hp h2 {
 }
 .hp-work-tab li.nav-item {
   margin: 0 20px;
+}
+.logo a:after {
+  content: "";
+  position: absolute;
+  width: 16%;
+  height: 79px;
+  background: #f3f2eb;
+  left: 4%;
+  top: 0;
+  display: block;
+  transition: 1s linear;
+}
+.logo a:hover:after {
+  left: 20%;
 }

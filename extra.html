@@ -1,80 +1,74 @@
-<div class="swiper-wrapper" style="transition-duration: 0ms; transform: translate3d(-5190px, 0px, 0px)">
-    <div class="swiper-slide swiper-slide-duplicate-active" data-swiper-slide-index="0"
-        style="width: 1730px; transition: all 0ms ease 0s">
-        <div class="container hp-slider-text-section">
-            <div data-swiper-parallax="300" class="slide-title" style="
-            transition-duration: 0ms;
-            transform: translate3d(300px, 0px, 0px);
-          ">
-                <h2>Crystal House</h2>
-            </div>
-            <div data-swiper-parallax="400" class="slide-text" style="
-            transition-duration: 0ms;
-            transform: translate3d(400px, 0px, 0px);
-          ">
-                <p>Plasana, Surat</p>
-            </div>
-            <div class="clearfix"></div>
-            <div data-swiper-parallax="500" class="slide-btns" style="
-            transition-duration: 0ms;
-            transform: translate3d(500px, 0px, 0px);
-          ">
-                <a href="#" class="theme-btn-s2" data-cursor="pointer2">EXPLORE</a>
-            </div>
-        </div>
-    </div>
-    <!-- end swiper-slide -->
-    <div class="swiper-slide swiper-slide-prev swiper-slide-duplicate-next" data-swiper-slide-index="1"
-        style="width: 1730px; transition: all 0ms ease 0s">
-        <div class="container hp-slider-text-section">
-            <div data-swiper-parallax="300" class="slide-title" style="
-            transition-duration: 0ms;
-            transform: translate3d(300px, 0px, 0px);
-          ">
-                <h2>Bota House 2</h2>
-            </div>
-            <div data-swiper-parallax="400" class="slide-text" style="
-            transition-duration: 0ms;
-            transform: translate3d(400px, 0px, 0px);
-          ">
-                <p>Plasana, Surat</p>
-            </div>
-            <div class="clearfix"></div>
-            <div data-swiper-parallax="500" class="slide-btns" style="
-            transition-duration: 0ms;
-            transform: translate3d(500px, 0px, 0px);
-          ">
-                <a href="#" class="theme-btn-s2" data-cursor="pointer2">EXPLORE</a>
-            </div>
-        </div>
-    </div>
-    <!-- end slide-inner -->
+<a id="one">Section 1</a>
+<a id="two">Section 2</a>
+<a id="three">Section 3</a>
+
+<nav>
+  <div class="container">
+    <ul>
+      <li><a href="#one">Section 1</a></li>
+      <li><a href="#two">Section 2</a></li>
+      <li><a href="#three">Section 3</a></li>
+    </ul>
+  </div>
+</nav>
+
+<section id="one">
+  <h1>Section 1</h1>
+</section>
+
+<section id="two">
+  <h1>Section 2</h1>
+</section>
+
+<section id="three">
+  <h1>Section 3</h1>
+</section>
 
 
-    <div class="swiper-slide swiper-slide-prev swiper-slide-duplicate-next" data-swiper-slide-index="1"
-        style="width: 1730px; transition: all 0ms ease 0s">
+<style>
 
-        <div class="container hp-slider-text-section">
-            <div data-swiper-parallax="300" class="slide-title" style="
-            transition-duration: 0ms;
-            transform: translate3d(300px, 0px, 0px);
-          ">
-                <h2>Botanist House 2</h2>
-            </div>
-            <div data-swiper-parallax="400" class="slide-text" style="
-            transition-duration: 0ms;
-            transform: translate3d(400px, 0px, 0px);
-          ">
-                <p>Plasana, Surat</p>
-            </div>
-            <div class="clearfix"></div>
-            <div data-swiper-parallax="500" class="slide-btns" style="
-            transition-duration: 0ms;
-            transform: translate3d(500px, 0px, 0px);
-          ">
-                <a href="#" class="theme-btn-s2" data-cursor="pointer2">EXPLORE</a>
-            </div>
-        </div>
-    </div>
-    <!-- end slide-inner -->
-</div>
+section {
+  height: 100%;
+  width: 100%;
+  display: table;
+  pointer-events: none;
+  z-index: 0;
+  -webkit-transition: transform 0.45s cubic-bezier(0, 0, 0.21, 1);
+  transition: transform 0.45s cubic-bezier(0, 0, 0.21, 1);
+}
+section h1 {
+  display: table-cell;
+  vertical-align: middle;
+  text-align: center;
+  color: #fff;
+  font-weight: lighter;
+}
+
+#one {
+  background: #2196F3;
+}
+
+#two {
+  background: #00BCD4;
+}
+
+#three {
+  background: #673AB7;
+}
+
+a[id="one"]:target ~ #one {
+  -webkit-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
+}
+
+a[id="two"]:target ~ #two {
+  -webkit-transform: translate3d(0, -100%, 0);
+  transform: translate3d(0, -100%, 0);
+}
+
+a[id="three"]:target ~ #three {
+  -webkit-transform: translate3d(0, -200%, 0);
+  transform: translate3d(0, -200%, 0);
+}
+
+</style>
