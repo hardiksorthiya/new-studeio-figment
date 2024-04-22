@@ -1213,3 +1213,6 @@ section.heading-work-hp h2 {
 .logo a:hover:after {
   left: 20%;
 }
+section.portfolio-slider {
+  margin-top: 100px;
+}
