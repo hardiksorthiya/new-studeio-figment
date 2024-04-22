@@ -645,7 +645,7 @@ section.section-second-about-owner {
 }
 h2.hp-title-two {
   font-weight: 600;
-  margin-bottom: 20px;
+  margin-bottom: 70px;
 }
 p.hp-des-two {
   text-align: center;
@@ -941,9 +941,6 @@ textarea#message {
   cursor: pointer;
   color: transparent;
   margin-top: -27px;
-}
-section.portfolio-slider {
-  margin-top: 100px;
 }
 .owl-prev:hover,
 .owl-next:hover {
