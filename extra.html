@@ -1,74 +1,495 @@
-<a id="one">Section 1</a>
-<a id="two">Section 2</a>
-<a id="three">Section 3</a>
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>About Us - Studio Figment</title>
+        <!-- css -->
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+        <!-- js -->
+        <link rel="stylesheet" href="js/jquery-3.7.1.min.js">
+        <!-- fevicon -->
+        <link rel="shortcut icon" href="images/logo_fevicon.svg">
+        <!-- script -->
+        <script src="js/bootstrap.bundle.min.js"></script>
+        <!-- animation css and script -->
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+        <!-- owl carousel -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.0.0-beta.3/assets/owl.carousel.css" />
+    </head>
 
-<nav>
-  <div class="container">
-    <ul>
-      <li><a href="#one">Section 1</a></li>
-      <li><a href="#two">Section 2</a></li>
-      <li><a href="#three">Section 3</a></li>
-    </ul>
-  </div>
-</nav>
+    <body data-barba="wrapper">
+        <div class="load-container">
+            <div class="loading-screen"></div>
+        </div>
 
-<section id="one">
-  <h1>Section 1</h1>
-</section>
+        <main data-barba="container" data-barba-namespace="h-section">
+            <div id="cursor"></div>
+    <div id="cursor-border"></div>
+    <!-- navigation -->
+    <nav role='navigation'>
+        <div class="logo">
+            <a href="/" data-cursor="pointer2"><img src="images/logo.webp" alt="Studio Figment"></a>
+        </div>
+        <div id="menuToggle" class="menu" data-cursor="pointer2">
+            <input class="humburger" type="checkbox" />
+            <span></span>
+            <span></span>
+            <span></span>
+            <ul id="menu">
+                <div class="overlay"></div>
+                <a href="extra2.html">
+                    <li>Home</li>
+                </a>
+                <a href="aboutus.html">
+                    <li>About</li>
+                </a>
+                <a href="work.html">
+                    <li>Work</li>
+                </a>
+                <a href="contactus.html">
+                    <li>Contact</li>
+                </a>
+                <div class="social-icon">
+                    <a href="#linkedin"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="#Instagram"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+                </div>
 
-<section id="two">
-  <h1>Section 2</h1>
-</section>
+            </ul>
+        </div>
+    </nav>
+    <!-- left panel -->
+    <div class="left-panel">
+        <div class="horizonral-subtitle"><span><strong>About Our Studio</strong></span></div>
+    </div>
 
-<section id="three">
-  <h1>Section 3</h1>
-</section>
+    <!-- wrapper -->
 
+    <div id="wrapper">
+        <div class="content" style="background-color: #f3f2eb" >
+            <section class="content-about-first">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-lg-5">
+                            <div class="banner-text-about-first" data-aos="fade-up-right">
+                                <div class="text-about-main" >
+                                    <h2>Where dreams take shape and imagination finds form.</h2>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-7">
+                            <div class="image-section-about overflow-hidden" data-aos="fade-down-left">
+                                <img src="images/home_1.jpeg" alt="Studio Figment" style="width: 100%" />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
 
-<style>
+            <section class="section-second-about-owner">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <h2 class="hp-title-two" data-aos="fade-up">Our Founder</h2>
+                        </div>
+                        <div class="col-lg-6">
+                            <p class="hp-des-two" data-aos="fade-right">
+                                Our best work stems from diversity in ideas, perspectives, and
+                                talent sets. We seek out people who are experts in niche
+                                fields and pair them with generalists. We look for opposing
+                                viewpoints and let them clash until the best solution emerges.
+                                It always does. Our best work stems from diversity in ideas,
+                                perspectives, and talent sets. We seek out people who are
+                                experts in niche fields and pair them with generalists. We
+                                look for opposing viewpoints and let them clash until the best
+                                solution emerges. It always does.
+                            </p>
+                        </div>
+                        <div class="col-lg-6">
+                            <div class="team-box" data-aos="fade-left">
+                                <div class="pr-bg pr-bg-white"></div>
+                                <div class="team-photo">
+                                    <img src="images/1.jpg" alt="" class="respimg" />
+                                </div>
+                                <div class="team-info">
+                                    <h3>Ar. Takshil Jagani</h3>
+                                    <h4>Principal Architect & Founder</h4>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
 
-section {
-  height: 100%;
-  width: 100%;
-  display: table;
-  pointer-events: none;
-  z-index: 0;
-  -webkit-transition: transform 0.45s cubic-bezier(0, 0, 0.21, 1);
-  transition: transform 0.45s cubic-bezier(0, 0, 0.21, 1);
+            <section id="section-third-about-value" >
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="hp-heading-our-values" data-aos="fade-up">
+                            <h2 class="hp-title-two">Our Values</h2>
+                        </div>
+                    </div>
+                    <div class="value-section">
+                        <div class="row">
+                            <div class="col-lg-4">
+                                <div class="box-one-value-hp" data-aos="fade-up"
+                                data-aos-easing="linear"
+                                data-aos-duration="1500">
+                                    <h4 class="sub-value-heading-hp">
+                                        Innovation and Imagination
+                                    </h4>
+                                    <p>
+                                        At Studio Figment, we believe in the transformative power
+                                        of creativity. Our designs go beyond mere structures; they
+                                        are immersive experiences that push the boundaries of
+                                        traditional architecture, turning dreams into reality
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="col-lg-4">
+                                <div class="box-one-value-hp" data-aos="fade-up"
+                                data-aos-easing="linear"
+                                data-aos-duration="2000">
+                                    <h4 class="sub-value-heading-hp">Attention to Detail</h4>
+                                    <p>
+                                        We are committed to excellence in every aspect of our
+                                        work. From the initial concept to the final construction,
+                                        every detail is meticulously crafted to ensure that our
+                                        designs resonate with those who inhabit them.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="col-lg-4">
+                                <div class="box-one-value-hp" data-aos="fade-up"
+                                data-aos-easing="linear"
+                                data-aos-duration="2500">
+                                    <h4 class="sub-value-heading-hp">Transformation</h4>
+                                    <p>
+                                        Every project at Studio Figment is a canvas waiting to be
+                                        transformed. We embark on a journey of discovery with each
+                                        design, turning ideas into tangible, awe-inspiring spaces.
+                                        Our work stands as a testament to the transformative magic
+                                        of architecture.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section id="section-fourth-about-testimonials">
+                <div class="row">
+                    <div class="hp-heading-our-values"  data-aos="fade-up">
+                        <h2 class="hp-title-two">Testimonials</h2>
+                    </div>
+                </div>
+                    <section class="portfolio-slider">
+                        <div class="section-padding">
+                            <div class="screenshot_slider owl-carousel ab-test-hp">
+                                <div class="item">
+                                    <div class="testimoial-box">
+                                        <div class="text-hp">
+                                            Our best work stems from diversity in ideas,
+                                            perspectives, and talent sets. We seek out people who
+                                            are experts in niche fields and pair them with
+                                            generalists. We look for opposing viewpoints and let
+                                            them clash until the best solution emerges. It always
+                                            does
+                                        </div>
+                                        <div class="sub-testi-hp">
+                                            <h3>Mr. Prince Dhabuwala</h3>
+                                            <p>The Native Inc.</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="item">
+                                    <div class="testimoial-box">
+                                        <div class="text-hp">
+                                            Our best work stems from diversity in ideas,
+                                            perspectives, and talent sets. We seek out people who
+                                            are experts in niche fields and pair them with
+                                            generalists. We look for opposing viewpoints and let
+                                            them clash until the best solution emerges. It always
+                                            does
+                                        </div>
+                                        <div class="sub-testi-hp">
+                                            <h3>Mr. Prince Dhabuwala</h3>
+                                            <p>The Native Inc.</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="item">
+                                    <div class="testimoial-box">
+                                        <div class="text-hp">
+                                            Our best work stems from diversity in ideas,
+                                            perspectives, and talent sets. We seek out people who
+                                            are experts in niche fields and pair them with
+                                            generalists. We look for opposing viewpoints and let
+                                            them clash until the best solution emerges. It always
+                                            does
+                                        </div>
+                                        <div class="sub-testi-hp">
+                                            <h3>Mr. Prince Dhabuwala</h3>
+                                            <p>The Native Inc.</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="item">
+                                    <div class="testimoial-box">
+                                        <div class="text-hp">
+                                            Our best work stems from diversity in ideas,
+                                            perspectives, and talent sets. We seek out people who
+                                            are experts in niche fields and pair them with
+                                            generalists. We look for opposing viewpoints and let
+                                            them clash until the best solution emerges. It always
+                                            does
+                                        </div>
+                                        <div class="sub-testi-hp">
+                                            <h3>Mr. Prince Dhabuwala</h3>
+                                            <p>The Native Inc.</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="item">
+                                    <div class="testimoial-box">
+                                        <div class="text-hp">
+                                            Our best work stems from diversity in ideas,
+                                            perspectives, and talent sets. We seek out people who
+                                            are experts in niche fields and pair them with
+                                            generalists. We look for opposing viewpoints and let
+                                            them clash until the best solution emerges. It always
+                                            does
+                                        </div>
+                                        <div class="sub-testi-hp">
+                                            <h3>Mr. Prince Dhabuwala</h3>
+                                            <p>The Native Inc.</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="item">
+                                    <div class="testimoial-box">
+                                        <div class="text-hp">
+                                            Our best work stems from diversity in ideas,
+                                            perspectives, and talent sets. We seek out people who
+                                            are experts in niche fields and pair them with
+                                            generalists. We look for opposing viewpoints and let
+                                            them clash until the best solution emerges. It always
+                                            does
+                                        </div>
+                                        <div class="sub-testi-hp">
+                                            <h3>Mr. Prince Dhabuwala</h3>
+                                            <p>The Native Inc.</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="item">
+                                    <div class="testimoial-box">
+                                        <div class="text-hp">
+                                            Our best work stems from diversity in ideas,
+                                            perspectives, and talent sets. We seek out people who
+                                            are experts in niche fields and pair them with
+                                            generalists. We look for opposing viewpoints and let
+                                            them clash until the best solution emerges. It always
+                                            does
+                                        </div>
+                                        <div class="sub-testi-hp">
+                                            <h3>Mr. Prince Dhabuwala</h3>
+                                            <p>The Native Inc.</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="item">
+                                    <div class="testimoial-box">
+                                        <div class="text-hp">
+                                            Our best work stems from diversity in ideas,
+                                            perspectives, and talent sets. We seek out people who
+                                            are experts in niche fields and pair them with
+                                            generalists. We look for opposing viewpoints and let
+                                            them clash until the best solution emerges. It always
+                                            does
+                                        </div>
+                                        <div class="sub-testi-hp">
+                                            <h3>Mr. Prince Dhabuwala</h3>
+                                            <p>The Native Inc.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+            </section>
+
+            
+        </div>
+        <footer>
+            <div class="container">
+                <div class="row" style="align-items: center">
+                    <div class="col-lg-4">
+                        <div class="first-footer-section">
+                            <p>
+                                Our team takes over everything, from an idea and concept
+                                development to realization. We believe in traditions and
+                                incorporate them within our innovations.Client is the soul of
+                                the project.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <h2 class="text-center got-project-hp">Got a project in mind?</h2>
+                        <h1 class="text-center got-project-hp" data-cursor="pointer2">
+                            <u><strong>Say Hi</strong></u>
+                        </h1>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="footer-social-icon text-center" data-cursor="pointer2">
+                            <a href="#linkedin"><i class="fa-brands fa-linkedin"></i></a>
+                            <a href="#Instagram"><i class="fa-brands fa-instagram"></i></a>
+                            <a href="#Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+        </main>
+    </body>
+    <!-- <script>
+        AOS.init({
+            duration: 1200,
+        })
+    </script> -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://unpkg.com/@barba/core"></script>
+    <script
+        type="text/javascript"
+        src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.2.4/gsap.min.js"
+    ></script>
+    <script>
+        function delay(n) {
+    n = n || 2000;
+    return new Promise((done) => {
+        setTimeout(() => {
+            done();
+        }, n);
+    });
 }
-section h1 {
-  display: table-cell;
-  vertical-align: middle;
-  text-align: center;
-  color: #fff;
-  font-weight: lighter;
+
+function pageTransition() {
+    var tl = gsap.timeline();
+    tl.to(".loading-screen", {
+        duration: 1.2,
+        width: "100%",
+        left: "0%",
+        ease: "Expo.easeInOut",
+    });
+
+    tl.to(".loading-screen", {
+        duration: 1,
+        width: "100%",
+        left: "100%",
+        ease: "Expo.easeInOut",
+        delay: 0.3,
+    });
+    tl.set(".loading-screen", { left: "-100%" });
 }
 
-#one {
-  background: #2196F3;
+function contentAnimation() {
+    var tl = gsap.timeline();
+    tl.from(".animate-this", { duration: 1, y: 30, opacity: 0, stagger: 0.4, delay: 0.2 });
 }
 
-#two {
-  background: #00BCD4;
-}
+$(function () {
+    barba.init({
+        sync: true,
 
-#three {
-  background: #673AB7;
-}
+        transitions: [
+            {
+                async leave(data) {
+                    const done = this.async();
 
-a[id="one"]:target ~ #one {
-  -webkit-transform: translate3d(0, 0, 0);
-  transform: translate3d(0, 0, 0);
-}
+                    pageTransition();
+                    await delay(1000);
+                    done();
+                },
 
-a[id="two"]:target ~ #two {
-  -webkit-transform: translate3d(0, -100%, 0);
-  transform: translate3d(0, -100%, 0);
-}
+                async enter(data) {
+                    contentAnimation();
+                },
 
-a[id="three"]:target ~ #three {
-  -webkit-transform: translate3d(0, -200%, 0);
-  transform: translate3d(0, -200%, 0);
-}
+                async once(data) {
+                    contentAnimation();
+                },
+            },
+        ],
+    });
+});
 
-</style>
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.1/js/swiper.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="js/script.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.0.0-beta.3/owl.carousel.js"></script>
+    <script>
+        var owl = $(".screenshot_slider").owlCarousel({
+            loop: true,
+            stagePadding: 10,
+            responsiveClass: true,
+            nav: true,
+            margin: 30,
+            autoplayTimeout: 4000,
+            smartSpeed: 400,
+            center: true,
+            navText: ["&#8592;", "&#8594;"],
+            responsive: {
+                300: {
+                    items: 1,
+                    nav: false,
+                    autoplayTimeout: 3000,
+                },
+                600: {
+                    items: 1,
+                },
+                769: {
+                    items: 2,
+                },
+                1200: {
+                    items: 2,
+                },
+                1600: {
+                    items: 2,
+                },
+            },
+        });
+
+        /****************************/
+
+        jQuery(document.documentElement).keydown(function (event) {
+            // var owl = jQuery("#carousel");
+
+            // handle cursor keys
+            if (event.keyCode == 37) {
+                // go left
+                owl.trigger("prev.owl.carousel", [400]);
+                //owl.trigger('owl.prev');
+            } else if (event.keyCode == 39) {
+                // go right
+                owl.trigger("next.owl.carousel", [400]);
+                //owl.trigger('owl.next');
+            }
+        });
+    </script>
+    
+</html>
