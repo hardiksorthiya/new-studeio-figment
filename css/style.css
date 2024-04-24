@@ -68,7 +68,7 @@ a {
   user-select: none;
 }
 .logo a img {
-  width: 18%;
+  width: 270px;
 }
 .swiper-button-next:after, .swiper-button-prev:after {
  
@@ -284,6 +284,7 @@ nav {
   right: 0;
   bottom: 0;
   z-index: 1;
+  overflow-x: hidden;
   /* background: var(--black-color-hp); */
 }
 
@@ -655,7 +656,7 @@ p.hp-des-two {
   font-weight: 600;
 }
 .team-photo img {
-  width: 80%;
+  width: 90%;
 }
 .team-info {
   background: white;
@@ -1200,10 +1201,10 @@ section.heading-work-hp h2 {
 .logo a:after {
   content: "";
   position: absolute;
-  width: 16%;
+  width: 20%;
   height: 79px;
   background: #f3f2eb;
-  left: 4%;
+  left: 60px;
   top: 0;
   display: block;
   transition: 1s linear;
@@ -1224,4 +1225,45 @@ section.portfolio-slider {
   color: white;
   padding: 15px 70px;
   margin-bottom: 20px;
+}
+.team-photo {
+  position: relative;
+  width: 100%;
+}
+.team-box {
+  position: relative;
+}
+section.portfolio-slider {
+  position: relative;
+  overflow-x: hidden;
+}
+
+
+
+
+
+
+@media only screen and (max-device-width: 1025px){
+  .banner-text-about-first {
+    top: 290px !important;
+}
+p.hp-des-two { 
+  padding: 0 16px;
+}
+}
+@media only screen and (min-device-width: 1023px) and (max-device-width: 1440px) and (orientation:portrait) {
+
+}
+@media only screen and (min-device-width: 1441px) {
+  .logo a img {
+    width: 220px;
+}
+.logo a:after {
+  left: 52px;
+}
+}
+@media only screen and (max-device-width: 780px) {
+  .logo a:after {
+    display: none;
+  }
 }
