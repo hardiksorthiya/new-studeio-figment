@@ -1214,3 +1214,14 @@ section.heading-work-hp h2 {
 section.portfolio-slider {
   margin-top: 100px;
 }
+.btn-area {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.btn-area a {
+  background: black;
+  color: white;
+  padding: 15px 70px;
+  margin-bottom: 20px;
+}
