@@ -28,40 +28,48 @@
      <div id="cursor-border"></div>
      <!-- navigation -->
      <nav role='navigation'>
-         <div class="logo">
-             <a href="/" data-cursor="pointer2"><img src="images/logo.webp" alt="Studio Figment"></a>
-         </div>
-         <div id="menuToggle" class="menu" >
-             <input class="humburger" type="checkbox" data-cursor="pointer2" />
-             <span></span>
-             <span></span>
-             <span></span>
-             <ul id="menu">
-                 <div class="overlay"></div>
-                 <a href="index.html" data-cursor="pointer4">
-                     <li>Home</li>
-                 </a>
-                 <a href="aboutus.html" data-cursor="pointer4">
-                     <li>About</li>
-                 </a>
-                 <a href="work.html" data-cursor="pointer4">
-                     <li>Work</li>
-                 </a>
-                 <a href="contactus.html" data-cursor="pointer4">
-                     <li>Contact</li>
-                 </a>
-                 <div class="social-icon">
-                     <a href="#linkedin"><i class="fa-brands fa-linkedin"></i></a>
-                     <a href="#Instagram"><i class="fa-brands fa-instagram"></i></a>
-                     <a href="#Facebook"><i class="fa-brands fa-facebook-f"></i></a>
-                 </div>
- 
-             </ul>
-         </div>
-     </nav>
+        <div class="row" style="    display: flex;
+        align-items: center;">
+            <div class="col-4">
+                <div class="logo">
+                    <a href="/" data-cursor="pointer2"><img src="images/logo.webp" alt="Studio Figment"></a>
+                </div>
+            </div>
+            <div class="col-8">
+                <div class="top-nav">
+                    <div class="menu"  data-cursor="pointer2">
+                      <div class="menu-line"></div>
+                      <div class="menu-line"></div>
+                      <div class="menu-line"></div>
+                    </div>
+                    <div class="menu-close">
+                      <div class="menu-line"></div>
+                      <div class="menu-line"></div>
+                    </div>
+                  </div>
+                  
+                  <div class="menu-background"></div>
+                  <div class="menu-panel">
+                    <div class="menu-links">
+                        <ul>
+                            <li><a href="index.html" data-cursor="pointer4">Home</a></li>
+                            <li><a href="aboutus.html" data-cursor="pointer4">About</a></li>
+                            <li><a href="work.html" data-cursor="pointer4">Work</a></li>
+                            <li><a href="contactus.html" data-cursor="pointer4">Contact</a></li>
+                        </ul>
+                        <div class="social-icon" data-cursor="pointer2">
+                            <a href="#linkedin"><i class="fa-brands fa-linkedin"></i></a>
+                            <a href="#Instagram"><i class="fa-brands fa-instagram"></i></a>
+                            <a href="#Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+                        </div>
+                    </div>
+                  </div>
+            </div>
+        </div>
+    </nav>
      <!-- left panel -->
      <div class="left-panel">
-         <div class="horizonral-subtitle"><span><strong>About Our Studio</strong></span></div>
+         <div class="horizonral-subtitle"><span><strong>Our Studio Figment</strong></span></div>
      </div>
  
     <!-- wrapper -->
@@ -194,8 +202,8 @@
     </script>
 
     <!-- script -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.1/js/swiper.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.1/js/swiper.min.js"></script>
     <script src="js/script.js"></script>
     <script src="js/popper.min.js"></script>
     <script src="js/bootstrap.min.js"></script>

@@ -27,35 +27,43 @@
     <div id="cursor-border"></div>
     <!-- navigation -->
     <nav role='navigation'>
-        <div class="logo">
-            <a href="/" data-cursor="pointer2"><img src="images/logo.webp" alt="Studio Figment"></a>
-        </div>
-        <div id="menuToggle" class="menu" data-cursor="pointer2">
-            <input class="humburger" type="checkbox" />
-            <span></span>
-            <span></span>
-            <span></span>
-            <ul id="menu">
-                <div class="overlay"></div>
-                <a href="index.html" data-cursor="pointer4">
-                    <li>Home</li>
-                </a>
-                <a href="aboutus.html" data-cursor="pointer4">
-                    <li>About</li>
-                </a>
-                <a href="work.html" data-cursor="pointer4">
-                    <li>Work</li>
-                </a>
-                <a href="contactus.html" data-cursor="pointer4">
-                    <li>Contact</li>
-                </a>
-                <div class="social-icon">
-                    <a href="#linkedin"><i class="fa-brands fa-linkedin"></i></a>
-                    <a href="#Instagram"><i class="fa-brands fa-instagram"></i></a>
-                    <a href="#Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+        <div class="row" style="    display: flex;
+        align-items: center;">
+            <div class="col-4">
+                <div class="logo">
+                    <a href="/" data-cursor="pointer2"><img src="images/logo.webp" alt="Studio Figment"></a>
                 </div>
-
-            </ul>
+            </div>
+            <div class="col-8">
+                <div class="top-nav">
+                    <div class="menu"  data-cursor="pointer2">
+                      <div class="menu-line"></div>
+                      <div class="menu-line"></div>
+                      <div class="menu-line"></div>
+                    </div>
+                    <div class="menu-close">
+                      <div class="menu-line"></div>
+                      <div class="menu-line"></div>
+                    </div>
+                  </div>
+                  
+                  <div class="menu-background"></div>
+                  <div class="menu-panel">
+                    <div class="menu-links">
+                        <ul>
+                            <li><a href="index.html" data-cursor="pointer4">Home</a></li>
+                            <li><a href="aboutus.html" data-cursor="pointer4">About</a></li>
+                            <li><a href="work.html" data-cursor="pointer4">Work</a></li>
+                            <li><a href="contactus.html" data-cursor="pointer4">Contact</a></li>
+                        </ul>
+                        <div class="social-icon" data-cursor="pointer2">
+                            <a href="#linkedin"><i class="fa-brands fa-linkedin"></i></a>
+                            <a href="#Instagram"><i class="fa-brands fa-instagram"></i></a>
+                            <a href="#Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+                        </div>
+                    </div>
+                  </div>
+            </div>
         </div>
     </nav>
     <!-- left panel -->
@@ -70,14 +78,14 @@
             <section class="content-about-first">
                 <div class="container-fluid">
                     <div class="row">
-                        <div class="col-lg-5">
+                        <div class="col-lg-5 col-md-3">
                             <div class="banner-text-about-first" data-aos="fade-up-right">
                                 <div class="text-about-main" >
                                     <h2>Where dreams take shape and imagination finds form.</h2>
                                 </div>
                             </div>
                         </div>
-                        <div class="col-lg-7">
+                        <div class="col-lg-7 col-md-9">
                             <div class="image-section-about overflow-hidden" data-aos="fade-down-left">
                                 <img src="images/home_1.jpeg" alt="Studio Figment" style="width: 100%" />
                             </div>
@@ -90,10 +98,10 @@
                 <div class="container-fluid">
                     <div class="row">
                         <div class="col-lg-12">
-                            <h2 class="hp-title-two" data-aos="fade-up">Our Founder</h2>
+                            <h2 class="hp-title-two" >Our Founder</h2>
                         </div>
                         <div class="col-lg-6">
-                            <p class="hp-des-two" data-aos="fade-right">
+                            <p class="hp-des-two">
                                 Our best work stems from diversity in ideas, perspectives, and
                                 talent sets. We seek out people who are experts in niche
                                 fields and pair them with generalists. We look for opposing
@@ -106,7 +114,7 @@
                             </p>
                         </div>
                         <div class="col-lg-6">
-                            <div class="team-box" data-aos="fade-left">
+                            <div class="team-box">
                                 <div class="pr-bg pr-bg-white"></div>
                                 <div class="team-photo">
                                     <img src="images/1.jpg" alt="" class="respimg" />
@@ -124,16 +132,14 @@
             <section id="section-third-about-value" >
                 <div class="container-fluid">
                     <div class="row">
-                        <div class="hp-heading-our-values" data-aos="fade-up">
+                        <div class="hp-heading-our-values">
                             <h2 class="hp-title-two">Our Values</h2>
                         </div>
                     </div>
                     <div class="value-section">
                         <div class="row">
                             <div class="col-lg-4">
-                                <div class="box-one-value-hp" data-aos="fade-up"
-                                data-aos-easing="linear"
-                                data-aos-duration="1500">
+                                <div class="box-one-value-hp">
                                     <h4 class="sub-value-heading-hp">
                                         Innovation and Imagination
                                     </h4>
@@ -146,9 +152,7 @@
                                 </div>
                             </div>
                             <div class="col-lg-4">
-                                <div class="box-one-value-hp" data-aos="fade-up"
-                                data-aos-easing="linear"
-                                data-aos-duration="2000">
+                                <div class="box-one-value-hp" >
                                     <h4 class="sub-value-heading-hp">Attention to Detail</h4>
                                     <p>
                                         We are committed to excellence in every aspect of our
@@ -159,9 +163,7 @@
                                 </div>
                             </div>
                             <div class="col-lg-4">
-                                <div class="box-one-value-hp" data-aos="fade-up"
-                                data-aos-easing="linear"
-                                data-aos-duration="2500">
+                                <div class="box-one-value-hp">
                                     <h4 class="sub-value-heading-hp">Transformation</h4>
                                     <p>
                                         Every project at Studio Figment is a canvas waiting to be
@@ -178,7 +180,7 @@
             </section>
             <section id="section-fourth-about-testimonials">
                 <div class="row">
-                    <div class="hp-heading-our-values"  data-aos="fade-up">
+                    <div class="hp-heading-our-values">
                         <h2 class="hp-title-two">Testimonials</h2>
                     </div>
                 </div>
