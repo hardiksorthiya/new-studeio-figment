@@ -36,27 +36,27 @@ a {
 }
 @font-face {
   font-family: "SegoeUI";
-  src: url(/webfont/SegoeUIVariableStaticDisplay.ttf);
+  src: url(webfont/SegoeUIVariableStaticDisplay.ttf);
   font-weight: 400;
 }
 @font-face {
   font-family: "SegoeUI";
-  src: url(/webfont/SegoeUIVariableStaticDisplayBold.ttf);
+  src: url(webfont/SegoeUIVariableStaticDisplayBold.ttf);
   font-weight: 800;
 }
 @font-face {
   font-family: "SegoeUI";
-  src: url(/webfont/SegoeUIVariableStaticDisplayLight.ttf);
+  src: url(webfont/SegoeUIVariableStaticDisplayLight.ttf);
   font-weight: 100;
 }
 @font-face {
   font-family: "SegoeUI";
-  src: url(/webfont/SegoeUIVariableStaticDisplaySemibold.ttf);
+  src: url(webfont/SegoeUIVariableStaticDisplaySemibold.ttf);
   font-weight: 600;
 }
 @font-face {
   font-family: "SegoeUI";
-  src: url(/webfont/SegoeUIVariableStaticDisplaySemilight.ttf);
+  src: url(webfont/SegoeUIVariableStaticDisplaySemilight.ttf);
   font-weight: 500;
 }
 
@@ -1361,6 +1361,15 @@ section.portfolio-slider {
   top: 14%;
   z-index: 2;
   left: 0;
+}
+#wrapper {
+  left: 0;
+}
+.left-panel {
+  display: none;
+}
+.heading-project {
+  font-size: 36px;
 }
 
 }
