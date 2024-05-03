@@ -30,13 +30,35 @@
     <!-- navigation -->
     <nav role='navigation'>
         <div class="row" style="    display: flex;
-        align-items: center;">
-            <div class="col-4">
+        align-items: center; padding: 10px 0; padding: 10px 0;">
+            <div class="col-lg-3 col-md-6 col-6">
                 <div class="logo">
                     <a href="/" data-cursor="pointer2"><img src="images/logo.webp" alt="Studio Figment"></a>
                 </div>
             </div>
-            <div class="col-8">
+            <div class="col-lg-6 tab-menu-hp-mainn-raw">
+                <div class="work-tab-hp">
+                    <ul class="nav nav-tabs" role="tablist">
+                        <li class="nav-item" role="presentation">
+                          <a class="nav-link active" data-bs-toggle="tab" href="#home" aria-selected="true" role="tab">All</a>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                          <a class="nav-link" data-bs-toggle="tab" href="#achitecture" aria-selected="false" tabindex="-1" role="tab">Achitecture</a>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                          <a class="nav-link" data-bs-toggle="tab"  href="#planning" aria-selected="false" tabindex="-1" role="tab">planning</a>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <a class="nav-link" data-bs-toggle="tab"  href="#interior" aria-selected="false" tabindex="-1" role="tab">Interior</a>
+                          </li>
+                          <li class="nav-item" role="presentation">
+                            <a class="nav-link" data-bs-toggle="tab"  href="#landscape" aria-selected="false" tabindex="-1" role="tab">Landscape</a>
+                          </li>
+                      </ul>
+                </div>
+                
+            </div>
+            <div class="col-lg-3 col-md-6 col-6">
                 <div class="top-nav">
                     <div class="menu"  data-cursor="pointer2">
                       <div class="menu-line"></div>
@@ -91,9 +113,8 @@
                     transform: scale(0.8);
                 }
                 .screenshot_slider .owl-item.center .item img {
-                    -webkit-transform: scale(1.15);
-                    -ms-transform: scale(1.15);
-                    transform: scale(1.15);
+                   
+                    transform: scale(1.05);
                 }
             </style>
             <section class="portfolio-slider" data-aos="fade-right"
