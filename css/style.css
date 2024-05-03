@@ -36,27 +36,27 @@ a {
 }
 @font-face {
   font-family: "SegoeUI";
-  src: url(webfont/SegoeUIVariableStaticDisplay.ttf);
+  src: url(/webfont/SegoeUIVariableStaticDisplay.ttf);
   font-weight: 400;
 }
 @font-face {
   font-family: "SegoeUI";
-  src: url(webfont/SegoeUIVariableStaticDisplayBold.ttf);
+  src: url(/webfont/SegoeUIVariableStaticDisplayBold.ttf);
   font-weight: 800;
 }
 @font-face {
   font-family: "SegoeUI";
-  src: url(webfont/SegoeUIVariableStaticDisplayLight.ttf);
+  src: url(/webfont/SegoeUIVariableStaticDisplayLight.ttf);
   font-weight: 100;
 }
 @font-face {
   font-family: "SegoeUI";
-  src: url(webfont/SegoeUIVariableStaticDisplaySemibold.ttf);
+  src: url(/webfont/SegoeUIVariableStaticDisplaySemibold.ttf);
   font-weight: 600;
 }
 @font-face {
   font-family: "SegoeUI";
-  src: url(webfont/SegoeUIVariableStaticDisplaySemilight.ttf);
+  src: url(/webfont/SegoeUIVariableStaticDisplaySemilight.ttf);
   font-weight: 500;
 }
 
@@ -64,7 +64,9 @@ h1, h2, h3, h4, h5, h6, p, span, a, div{
   font-family: var(--font-family-body);
 }
 
-
+.image-sec-two-pr-dt {
+  overflow: hidden;
+}
 
 #menuToggle {
   display: block;
@@ -683,7 +685,7 @@ h4.sub-value-heading-hp {
 }
 footer {
   background: var(--black-color-hp);
-  padding: 50px 0;
+  padding: 50px;
 }
 .first-footer-section p, h2.text-center.got-project-hp, .got-project-hp {
   color: var(--background-color);
@@ -693,7 +695,9 @@ footer {
   font-size: 28px;
   color: var(--background-color);
 }
-
+.footer-social-icon.text-center {
+  text-align: end !important;
+}
 /* carousal */
 
 .carousel__wrapper {
@@ -1234,6 +1238,7 @@ section.portfolio-slider {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  position: relative;
 }
 .btn-area a {
  
@@ -1277,6 +1282,18 @@ section.portfolio-slider {
   display: flex;
   justify-content: center;
 }
+.btn-area.p-area-hp .owl-next {
+  right: 0%;
+}
+.btn-area.p-area-hp .owl-prev {
+  left: 0%;
+}
+.btn-area.p-area-hp a {
+  margin: 0 15px 20px;
+}
+
+
+
 @media only screen and (max-device-width: 1025px){
   .banner-text-about-first {
     top: 290px !important;
